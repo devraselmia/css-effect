@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css spin text</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+         .container {
+             width: 600px;
+             margin: 100px auto;
+         }
+         .image-box {
+             overflow: hidden;
+             position: relative;
+         }
+         .image-box img {
+             width: 100%;
+             border-radius: 20px;
+         }
+         .text-box {
+             position: absolute;
+             top: 0;
+             left: -100%;
+             width: 100%;
+             height: 100%;
+             background: rgb(255, 0, 119);
+             transition:  ease-in-out .9s;
+             border-radius: 20px;
+         }
+         .content {
+            position: absolute;
+            top: 45%;
+            left: 40%;
+            transform: translateX(-32%) translateY(-46%);
+        }
+         .text-box h1 {
+             text-align: center;
+             text-transform: capitalize;
+             color: #fff;
+             font-size: 48px;
+             margin-top: 20px;
+         }
+         p {
+            text-align: center;
+             text-transform: capitalize;
+             color: #fff;
+             margin-top: 20px;
+             font-size: 17px;
+             font-weight: 600;
+         }
+         .image-box:hover .text-box{
+            left: 0;
+         }
+    </style>
+
+</head>
+<body>
+   <div class="container">
+       <div class="image-box">
+           <img src="/img/css-hover.jpg" alt="">
+           <div class="text-box">
+               <div class="content">
+                 <h1>beautifull nature</h1>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, pariatur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ad voluptatum, laboriosam, ut laudantium beatae officia obcaecati expedita et natus ipsum suscipit nihil quae animi totam? Laborum iusto ab exercitationem.</p>
+                </div>
+            </div>
+       </div>
+       
+   </div>
+</body>
+</html>
