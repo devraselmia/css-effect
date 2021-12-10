@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css loading text</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #2b2b2b;
+        }
+         .loader {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+         }
+.loader span {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    transition: all .5s;
+    animation: animate 2s infinite;
+}
+
+.loader span:nth-child(1) {
+    animation-delay: .1s;
+}
+.loader span:nth-child(2) {
+    animation-delay: .2s;
+}
+.loader span:nth-child(3) {
+    animation-delay: .3s;
+}
+.loader span:nth-child(4) {
+    animation-delay: .4s;
+}
+.loader span:nth-child(5) {
+    animation-delay: .5s;
+}
+.loader span:nth-child(6) {
+    animation-delay: .0s;
+}
+.loader span:nth-child(7) {
+    animation-delay: .6s;
+}
+.loader span:nth-child(8) {
+    animation-delay: .7s;
+}
+.loader span:nth-child(9) {
+    animation-delay: .8s;
+}
+
+@keyframes animate {
+    0% {
+        color: rgba(255,255,255,1);
+        transform: translateY(0);
+        margin-left: 0;
+    }
+    25% {
+        color: rgb(255, 136, 0);
+        transform: translateY(-15px);
+        margin-left: 10px;
+        text-shadow: 0 15px 5px rgba(0,0,0,1);
+    }
+    100% {
+        color: rgba(255,255,255,1);
+        transform: translateY(0);
+    }
+}
+
+    </style>
+
+</head>
+<body>
+   <div class="container loader">
+       <span>R</span>
+       <span>A</span>
+       <span>S</span>
+       <span>E</span>
+       <span>L</span>
+       <span style="margin: 0 3px;"></span>
+       <span>M</span>
+       <span>I</span>
+       <span>A</span>
+   </div>
+</body>
+</html>
