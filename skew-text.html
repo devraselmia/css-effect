@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skew Text</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #fa6f9b;
+        }
+        .skew {
+            width: 80%;
+            text-align: center;
+            margin:200px auto;
+        }
+         .text {
+             text-align: center;
+             display: inline-block;
+             transition: ease-in-out .5s;
+         }
+         .text span {
+             background: #fff;
+             width: 120px;
+             height: 120px;
+             line-height: 120px;
+             font-size: 40 px;
+             font-weight: bold;
+             color: #686868;
+             display: inline-block;
+             margin-right: -4px;
+             transition: ease-in-out .5s;
+         }
+        .text:hover span:nth-child(odd) {
+            transform: skewY(-15deg);
+            box-shadow: 0 60px 20px rgba(0,0,0,.1) ;
+        }
+        .text:hover span:nth-child(even) {
+            transform: skewY(15deg);
+        } 
+    </style>
+
+</head>
+<body>
+    <div class="skew">
+    <div class="text">
+        <span>R</span>
+        <span>A</span>
+        <span>S</span>
+        <span>E</span>
+        <span>L</span>
+        <span>M</span>
+        <span>I</span>
+        <span>A</span>
+        </div>
+   </div>
+</body>
+</html>
